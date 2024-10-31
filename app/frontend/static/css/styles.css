@@ -1,0 +1,516 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-box h1 {
+    font-size: 24px;
+    color: #1a73e8;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 10px;
+    background-color: #1a73e8;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-login:hover {
+    background-color: #155bb5;
+}
+
+
+.dashboard-page {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #1a73e8;
+    color: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-bar {
+    background-color: #f5f5f5;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.top-bar p {
+    font-size: 16px;
+}
+
+.user-info .btn-logout {
+    padding: 8px 12px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.user-info .btn-logout:hover {
+    background-color: #c9302c;
+}
+
+.file-area {
+    padding: 20px;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.file-area h3 {
+    margin-top: 0;
+    font-size: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+
+.register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.register-box h1 {
+    font-size: 24px;
+    color: #1a73e8;
+    margin-bottom: 10px;
+}
+
+.register-box .subtitle {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn-register {
+    width: 100%;
+    padding: 10px;
+    background-color: #1a73e8;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-register:hover {
+    background-color: #155bb5;
+}
+
+.btn-logout {
+    background-color: #f44336; /* Rojo */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-logout:hover {
+    background-color: #d32f2f;
+}
+
+
+#filesList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 20px;
+}
+
+
+.file-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.file-card:hover {
+    transform: scale(1.05);
+}
+
+.file-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 8px;
+    color: #333;
+}
+
+.file-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.file-info {
+    font-size: 12px;
+    color: #999;
+    margin-top: 8px;
+}
+
+
+.floating-buttons {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn-floating {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+}
+
+.btn-floating:hover {
+    transform: scale(1.1);
+}
+
+.floating-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.file-options {
+    position: absolute;
+    bottom: 0;
+    right: 60px; 
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+
+.btn-floating {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    opacity: 0.9;
+    font-size: 16px;
+    transition: opacity 0.5s ease;
+}
+
+.notification.error {
+    background-color: #f44336;
+}
+
+.notification.hide {
+    opacity: 0;
+}
+
+.file-card {
+    width: 200px;
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.file-name {
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.file-description {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+    height: 40px;
+    overflow: hidden;
+}
+
+.file-image {
+    max-width: 100%;
+    max-height: 100px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+.file-info, .file-owner {
+    font-size: 12px;
+    color: #777;
+    margin-top: 5px;
+}
+
+.file-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.file-actions .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.file-actions .btn-delete {
+    background-color: #dc3545;
+}
+
+.file-actions .btn:hover {
+    opacity: 0.9;
+}
+
+.file-card {
+    position: relative;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.file-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.file-image {
+    max-width: 80px;
+    margin: 10px auto;
+}
+
+.btn-square {
+    font-size: 18px;
+    padding: 5px;
+    width: 25px;
+    height: 25px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.file-options {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.btn-icon {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.btn-icon:hover {
+    transform: scale(1.2);
+}
+
+.btn-icon i {
+    color: #6c757d; 
+}
+
+.btn-icon.share i {
+    color: #007bff; 
+}
+
+.btn-icon.delete i {
+    color: #dc3545; 
+}
+
+.btn-icon.view i {
+    color: #28a745; 
+}
+
+.btn-icon.edit i {
+    color: #ffc107;
+}
+
+.btn-icon:hover i {
+    color: #343a40; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    background-color: #333;
+}
+
+.navbar button {
+    color: white;
+    background-color: #333;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.section {
+    padding: 20px;
+}

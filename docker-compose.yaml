@@ -1,0 +1,54 @@
+# version: "3.9"
+
+# services:
+#   app:
+#     image: python:3.12.7
+#     container_name: flask-app
+#     working_dir: /app/backend
+#     environment:
+#       - MONGO_URI=mongodb://mongo:27017/grafiles_db 
+#     volumes:
+#       - ./app:/app
+#     ports:
+#       - "8888" 
+#     command: >
+#       sh -c "pip install -r requirements.txt &&
+#               gunicorn --bind 0.0.0.0:8888 main:app"  # Ejecutar Gunicorn
+#     depends_on:
+#       - mongo
+
+#   mongo:
+#     image: mongo
+#     container_name: grafiles-mongo
+#     ports:
+#       - "27017:27017" 
+#     volumes:
+#       - mongo_data:/data/db
+
+#   nginx:
+#     image: nginx:latest
+#     container_name: grafiles-nginx
+#     ports:
+#       - "9000:80" 
+#     volumes:
+#       - ./app/frontend/nginx.conf:/etc/nginx/nginx.conf
+#       - ./app/frontend/static:/app/frontend/static
+#     depends_on:
+#       - app
+
+# volumes:
+#   mongo_data:
+
+version: "3.9"
+
+services:
+  mongo:
+    image: mongo:latest
+    container_name: grafiles-mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data:
